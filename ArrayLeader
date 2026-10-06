@@ -1,0 +1,18 @@
+public class ArrayLeader {
+    public static void main(String[] args) {
+        int []arr={16, 17, 4, 3, 5, 2};
+        leader(arr);
+       // Input: arr[] = [16, 17, 4, 3, 5, 2]
+       // Output: [17 5 2]
+    }
+    static void leader(int []arr){
+        int maxRight=arr[arr.length-1];
+        System.out.print("["+maxRight+" ");
+        for (int i = arr.length-2 ;i >=0; i--) {
+            if(arr[i]>maxRight){
+                maxRight=arr[i];
+                System.out.print(maxRight+" ");
+            }
+        }
+    }
+}
