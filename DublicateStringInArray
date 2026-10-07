@@ -1,0 +1,12 @@
+class DublicateStringInArray{
+    public static void main(String[] args) {
+        String[] arr={"ram","mohan","Mohan","om","ram","sohan"};
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = i+1; j <arr.length ; j++) {
+                if(arr[i].toUpperCase().equals(arr[j].toUpperCase())){
+                    System.out.println("Duplicate:"+arr[i]);
+                }
+            }
+        }
+    }
+}
